@@ -1,107 +1,105 @@
-// SnakeBoard
-const blockSize = 25
-const rows = 20
-const cols = 20
-var board
-var context
+// Losing variable
+var youLost = false
 
-//front of the snake
-var snakeX = blockSize * 6
-var snakeY = blockSize * 6
+// Creating the map for the snake and the food
+var map
+var slither
+const mineCraft = 25
+const upDown = 25
+const leftRight = 25
+var gaStu
+var gaStud
 
-var velocityX = 0
-var velocityY = 0
+// Front of the snake or the start of it before it starts to grow
+var headOne = mineCraft * 6
+var headTwo = mineCraft * 6
 
-var snakeBody = []
+// Speed of the sneaky snake
+var fastNine = 0
+var fastEight = 0
+var theSnake = []
 
-//food for the snake
-var foodX
-var foodY
+// Randomization
 
-var gameOver = false
+function snakeBite() {
+  gaStu = Math.floor(Math.random() * leftRight) * mineCraft
+  gaStud = Math.floor(Math.random() * upDown) * mineCraft
+}
+
+function moveAround(d) {
+  if (d.code == 'ArrowUp' && fastEight != 1) {
+    fastNine = 0
+    fastEight = -1
+  } else if (d.code === 'ArrowDown' && fastEight != -1) {
+    fastNine = 0
+    fastEight = 1
+  } else if (d.code === 'ArrowLeft' && fastNine != 1) {
+    fastNine = -1
+    fastEight = 0
+  } else if (d.code === 'ArrowRight' && fastNine != -1) {
+    fastNine = 1
+    fastEight = 0
+  }
+}
 
 window.onload = function () {
-  board = document.getElementById('board')
-  board.height = rows * blockSize
-  board.width = cols * blockSize
-  context = board.getContext('2d')
+  map = document.getElementById('map')
+  map.height = upDown * mineCraft
+  map.width = leftRight * mineCraft
+  slither = map.getContext('2d')
 
-  placeFood()
-  document.addEventListener('keyup', changeDirection)
-  //   update()
+  snakeBite()
+  document.addEventListener('keyup', moveAround)
   setInterval(update, 1000 / 10)
 }
 
 function update() {
-  if (gameOver) {
+  if (youLost) {
     return
   }
 
-  context.fillStyle = 'black'
-  context.fillRect(0, 0, board.width, board.height)
+  slither.fillStyle = 'black'
+  slither.fillRect(0, 0, map.width, map.height)
 
-  context.fillStyle = 'red'
-  context.fillRect(foodX, foodY, blockSize, blockSize)
+  slither.fillStyle = 'red'
+  slither.fillRect(gaStu, gaStud, mineCraft, mineCraft)
 
-  if (snakeX == foodX && snakeY == foodY) {
-    snakeBody.push([foodX, foodY])
-    placeFood()
+  if (headOne == gaStu && headTwo == gaStud) {
+    theSnake.push([gaStu, gaStud])
+    snakeBite()
   }
 
-  for (let i = snakeBody.length - 1; i > 0; i--) {
-    snakeBody[i] = snakeBody[i - 1]
+  for (let i = theSnake.length - 1; i > 0; i--) {
+    theSnake[i] = theSnake[i - 1]
   }
-  if (snakeBody.length) {
-    snakeBody[0] = [snakeX, snakeY]
-  }
-
-  context.fillStyle = 'white'
-  snakeX += velocityX * blockSize
-  snakeY += velocityY * blockSize
-  context.fillRect(snakeX, snakeY, blockSize, blockSize)
-  //   console.log(velocityX)
-  for (let i = 0; i < snakeBody.length; i++) {
-    context.fillRect(snakeBody[i][0], snakeBody[i][1], blockSize, blockSize)
+  if (theSnake.length) {
+    theSnake[0] = [headOne, headTwo]
   }
 
-  //game over conditions
+  slither.fillStyle = 'white'
+  headOne += fastNine * mineCraft
+  headTwo += fastEight * mineCraft
+  slither.fillRect(headOne, headTwo, mineCraft, mineCraft)
+  //   console.log(fastNine)
+  for (let i = 0; i < theSnake.length; i++) {
+    slither.fillRect(theSnake[i][0], theSnake[i][1], mineCraft, mineCraft)
+  }
+
+  // Having trouble making the game over conditions
   if (
-    snakeX < 0 ||
-    snakeX > cols * blockSize ||
-    snakeY < 0 ||
-    snakeY > rows * blockSize
+    headOne < 0 ||
+    headOne > leftRight * mineCraft ||
+    headTwo < 0 ||
+    headTwo > upDown * mineCraft
   ) {
-    gameOver = true
+    youLost = true
     alert('You Lost')
   }
 
-  for (let i = 0; i < snakeBody.length; i++) {
-    if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
-      gameOver = true
+  for (let i = 0; i < theSnake.length; i++) {
+    if (headOne == theSnake[i][0] && headTwo == theSnake[i][1]) {
+      youLost = true
       alert('You lost')
     }
   }
-}
-
-function changeDirection(e) {
-  if (e.code == 'ArrowUp' && velocityY != 1) {
-    velocityX = 0
-    velocityY = -1
-  } else if (e.code == 'ArrowDown' && velocityY != -1) {
-    velocityX = 0
-    velocityY = 1
-  } else if (e.code == 'ArrowLeft' && velocityX != 1) {
-    velocityX = -1
-    velocityY = 0
-  } else if (e.code == 'ArrowRight' && velocityX != -1) {
-    velocityX = 1
-    velocityY = 0
-  }
-}
-
-//randomization
-
-function placeFood() {
-  foodX = Math.floor(Math.random() * cols) * blockSize
-  foodY = Math.floor(Math.random() * rows) * blockSize
 }
