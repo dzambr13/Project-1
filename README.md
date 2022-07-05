@@ -1,54 +1,49 @@
-# Project Title
+# Michael and John vs GA students
 
-## Date: 6/22/2022
+## Date: 7/03/2022
 
 ## By: Dave Zambrano
 
-[Website | GitHub | LinkedIn | Vettery](http://www.duckduckgo.com)
+[GitHub | LinkedIn | Vettery](https://github.com/dzambr13)
 
 ---
 
 ### **_Description_**
 
-#### A brief description of the project, what it's about, when and what you made it for, etc. ...
+#### A beginners Snake game that was created by using HTML, CSS, and JavaScript. Methods that are used have been taught by our lovely instructors throughout the class thus far.
 
 ---
 
-### **_Technologies Used_**
+### **_Methods used_**
 
-- Technology 1
-- Technology 2
-  - Sub-item 1
-  - Sub-item 2
-- Technology 3
+- Functions
+- If else statements
+- For loops
+- DOM
+- Randomization
 
 ---
 
-### **_Screenshots_**
+### **_Screenshot(s)_**
 
 ##### image header 1
 
-![Just Do It](https://c.static-nike.com/a/images/w_1920,c_limit/bzl2wmsfh7kgdkufrrjq/image.jpg)
-
-##### image header 2
-
-![Adidas](https://moneyinc.com/wp-content/uploads/2018/07/Adidas-Logo-marketing-1200x630.jpg)
+![Snake board](https://cdn.discordapp.com/attachments/626597292769673217/993580975281938482/unknown.png)
 
 ---
 
 ### **_Future Updates_**
 
-- [] Future Update 1
-- [] Future Update 2
-- [x] Completed Update
-- [x] ~~Strikethrough~~ Items Also
+- [] have multiple food spawn simultaneously
+- [] Food disappear after a certain amount of time
+- [] Board expansion
 
 ---
 
 ### **_Credits_**
 
-##### image header 1: [Nike] (https://placeholder.com/)
+##### [DOM] (https://github.com/SEI-R-6-21/u1_lesson_intro_DOM)
 
-##### image header 2: [Adidos] (https://placeholder.com/)
+##### [IfElse] (https://github.com/SEI-R-6-21/u1_lesson_loops_and_control_flow)
 
 ---
