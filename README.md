@@ -26,17 +26,22 @@
 
 ### **_Screenshot(s)_**
 
-##### image header 1
+##### In game
 
-![Snake board](https://cdn.discordapp.com/attachments/626597292769673217/993580975281938482/unknown.png)
+![Snake board](https://cdn.discordapp.com/attachments/983366887184404500/994262280348893215/unknown.png)
+
+##### Game Over
+
+![GameOver](https://cdn.discordapp.com/attachments/983366887184404500/994307913197822083/unknown.png)
 
 ---
 
 ### **_Future Updates_**
 
-- [] have multiple food spawn simultaneously
-- [] Food disappear after a certain amount of time
-- [] Board expansion
+- [x] Scoreboard
+- [x] Better game over screen
+- [] Restart button
+- [x] Board expansion
 
 ---
 

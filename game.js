@@ -58,8 +58,6 @@ window.onload = function () {
   setInterval(goGo, 1000 / 10)
 }
 
-restartButton = document.getElementById('reset-button')
-
 function goGo() {
   if (youLost) {
     return
@@ -110,7 +108,6 @@ function goGo() {
   for (let i = 0; i < theSnake.length; i++) {
     if (headOne == theSnake[i][0] && headTwo == theSnake[i][1]) {
       youLost = true
-      break
     }
   }
   if (youLost) {
@@ -124,5 +121,5 @@ function goGo() {
 function scoreBoard() {
   slither.fillStyle = 'white'
   slither.font = '13px Verdana'
-  slither.fillText('score ' + score, map.width - 60, 10)
+  slither.fillText('score ' + score, map.width - 333, 10)
 }

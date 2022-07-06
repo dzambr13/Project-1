@@ -1,0 +1,30 @@
+body {
+    background-color: lightcoral;
+    font-family:monospace;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    padding: 10px;
+    font-size: 40px;
+    background-color: lightcoral;
+    border: 0;
+}
