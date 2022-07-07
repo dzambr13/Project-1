@@ -1,4 +1,4 @@
-# Michael and John vs GA students
+# Snake but no ladder
 
 ## Date: 7/03/2022
 
