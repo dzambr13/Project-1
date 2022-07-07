@@ -40,7 +40,7 @@
 
 - [x] Scoreboard
 - [x] Better game over screen
-- [] Restart button
+- [x] Restart button
 - [x] Board expansion
 
 ---
