@@ -26,6 +26,10 @@
 
 ### **_Screenshot(s)_**
 
+##### Introduction Screen
+
+![IntroductionScreen](https://cdn.discordapp.com/attachments/983366887184404500/994662456171446423/unknown.png)
+
 ##### In game
 
 ![Snake board](https://cdn.discordapp.com/attachments/983366887184404500/994658676449234954/unknown.png)
