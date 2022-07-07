@@ -29,6 +29,15 @@ function snakeBite() {
   gaStu = Math.floor(Math.random() * leftRight) * mineCraft
   gaStud = Math.floor(Math.random() * upDown) * mineCraft
 }
+// Resetting
+const restartButton = document.getElementById('restartButton')
+console.log(restartButton)
+const restartGame = () => {
+  window.location.reload()
+}
+
+restartButton.addEventListener('click', restartGame)
+
 // The snake cannot go back the direction that it is going
 // If you spam the arrow keys it'll eat itself, try fix
 function moveAround(d) {
