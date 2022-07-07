@@ -1,7 +1,7 @@
 body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    background-color: lightcoral;
+    background-color: lightgreen;
 }
 
 canvas {
@@ -15,9 +15,10 @@ canvas {
 
 button {
     display: inline;
-    background-color: lightcoral;
-    font-size: 1.5rem;
+    background-color: transparent;
+    font-size: 2rem;
     padding: 3px;
     margin: 50px;
+    border: 0;
 }
 

@@ -28,11 +28,11 @@
 
 ##### In game
 
-![Snake board](https://cdn.discordapp.com/attachments/983366887184404500/994262280348893215/unknown.png)
+![Snake board](https://cdn.discordapp.com/attachments/983366887184404500/994658676449234954/unknown.png)
 
 ##### Game Over
 
-![GameOver](https://cdn.discordapp.com/attachments/983366887184404500/994307913197822083/unknown.png)
+![GameOver](https://cdn.discordapp.com/attachments/983366887184404500/994658280007811263/unknown.png)
 
 ---
 

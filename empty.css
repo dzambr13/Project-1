@@ -1,19 +1,25 @@
 body {
-    background-color: lightcoral;
+    background-image: url(https://wallpaperaccess.com/full/1919770.jpg);
     font-family:monospace;
+    background-size: inherit;
+    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    margin: 20px;
+    margin: 10vh;
     padding: 20px;
+    color: white;
 }
 
 h2 {
     display: flex;
     justify-content: center;
     font-size: 30px;
+    color: white;
 }
 
 div {
@@ -23,8 +29,11 @@ div {
 
 button {
     display: flex;
-    padding: 10px;
-    font-size: 40px;
-    background-color: lightcoral;
+    padding: 10vh;
+    font-size: 8vh;
+    background-color: transparent;
     border: 0;
+    padding: 2vh;
+    margin: 10vh;
+    color: white;
 }
