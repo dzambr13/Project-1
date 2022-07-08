@@ -31,11 +31,12 @@ function snakeBite() {
 }
 // Resetting
 const restartButton = document.getElementById('restartButton')
-// const restartGame = () => {
-//   window.location.reload()
-// }
+console.log(restartButton)
+const restartGame = () => {
+  window.location.reload()
+}
 
-restartButton.addEventListener('click', () => window.location.reload())
+restartButton.addEventListener('click', restartGame)
 
 // The snake cannot go back the direction that it is going
 // If you spam the arrow keys it'll eat itself, try fix
@@ -116,7 +117,6 @@ function goGo() {
   for (let i = 0; i < theSnake.length; i++) {
     if (headOne == theSnake[i][0] && headTwo == theSnake[i][1]) {
       youLost = true
-      break
     }
   }
   if (youLost) {
@@ -130,5 +130,5 @@ function goGo() {
 function scoreBoard() {
   slither.fillStyle = 'white'
   slither.font = '13px Verdana'
-  slither.fillText('score ' + score, map.width - 60, 10)
+  slither.fillText('score ' + score, map.width - 333, 10)
 }
