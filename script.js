@@ -36,3 +36,21 @@ const restartButton = document.getElementById('restartButton')
 // }
 
 restartButton.addEventListener('click', () => window.location.reload())
+
+// The snake cannot go back the direction that it is going
+// If you spam the arrow keys it'll eat itself, try fix
+function moveAround(d) {
+  if (d.code === 'ArrowUp' && fastEight != 1) {
+    fastNine = 0
+    fastEight = -1
+  } else if (d.code === 'ArrowDown' && fastEight != -1) {
+    fastNine = 0
+    fastEight = 1
+  } else if (d.code === 'ArrowLeft' && fastNine != 1) {
+    fastNine = -1
+    fastEight = 0
+  } else if (d.code === 'ArrowRight' && fastNine != -1) {
+    fastNine = 1
+    fastEight = 0
+  }
+}
