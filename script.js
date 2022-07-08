@@ -85,3 +85,19 @@ function goGo() {
     score++
     snakeBite()
   }
+
+  for (let i = theSnake.length - 1; i > 0; i--) {
+    theSnake[i] = theSnake[i - 1]
+  }
+  if (theSnake.length) {
+    theSnake[0] = [headOne, headTwo]
+  }
+
+  slither.fillStyle = 'green'
+  headOne += fastNine * mineCraft
+  headTwo += fastEight * mineCraft
+  slither.fillRect(headOne, headTwo, mineCraft, mineCraft)
+  //   console.log(fastNine)
+  for (let i = 0; i < theSnake.length; i++) {
+    slither.fillRect(theSnake[i][0], theSnake[i][1], mineCraft, mineCraft)
+  }
