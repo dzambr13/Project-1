@@ -65,3 +65,13 @@ window.onload = function () {
   document.addEventListener('keyup', moveAround)
   setInterval(goGo, 1000 / 10)
 }
+
+function goGo() {
+  if (youLost) {
+    return
+  }
+
+  // Map and food color
+  slither.fillStyle = 'black'
+  slither.fillRect(0, 0, map.width, map.height)
+  scoreBoard()
