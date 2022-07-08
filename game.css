@@ -4,5 +4,9 @@ body {
     background-color: darkgreen;
 }
 
+canvas {
+    box-shadow: black 20px 40px 50px;
+}
+
 
 
