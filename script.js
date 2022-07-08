@@ -126,3 +126,9 @@ function goGo() {
     slither.fillText('Game Over!', map.width / 3.33, map.height / 2)
   }
 }
+
+function scoreBoard() {
+  slither.fillStyle = 'white'
+  slither.font = '13px Verdana'
+  slither.fillText('score ' + score, map.width - 60, 10)
+}
