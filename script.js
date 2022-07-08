@@ -75,3 +75,13 @@ function goGo() {
   slither.fillStyle = 'black'
   slither.fillRect(0, 0, map.width, map.height)
   scoreBoard()
+
+  slither.fillStyle = 'lightgrey'
+  slither.fillRect(gaStu, gaStud, mineCraft, mineCraft)
+  // When the snake eats the food, it grows
+  // When the snake eats the food, score also should increase
+  if (headOne == gaStu && headTwo == gaStud) {
+    theSnake.push([gaStu, gaStud])
+    score++
+    snakeBite()
+  }
