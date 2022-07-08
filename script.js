@@ -29,3 +29,10 @@ function snakeBite() {
   gaStu = Math.floor(Math.random() * leftRight) * mineCraft
   gaStud = Math.floor(Math.random() * upDown) * mineCraft
 }
+// Resetting
+const restartButton = document.getElementById('restartButton')
+// const restartGame = () => {
+//   window.location.reload()
+// }
+
+restartButton.addEventListener('click', () => window.location.reload())
