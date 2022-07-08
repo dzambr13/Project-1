@@ -1,24 +1,8 @@
 body {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
-    background-color: lightgreen;
+    background-color: darkgreen;
 }
 
-canvas {
-    box-shadow: black 20px 40px 50px;
-}
 
-.restartButton{
-    display: flex;
-    justify-content: center;
-}
-
-button {
-    display: inline;
-    background-color: transparent;
-    font-size: 2rem;
-    padding: 3px;
-    margin: 50px;
-    border: 0;
-}
 
