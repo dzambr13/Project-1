@@ -54,3 +54,14 @@ function moveAround(d) {
     fastEight = 0
   }
 }
+
+window.onload = function () {
+  map = document.getElementById('map')
+  map.height = upDown * mineCraft
+  map.width = leftRight * mineCraft
+  slither = map.getContext('2d')
+
+  snakeBite()
+  document.addEventListener('keyup', moveAround)
+  setInterval(goGo, 1000 / 10)
+}
