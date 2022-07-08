@@ -112,3 +112,17 @@ function goGo() {
   ) {
     youLost = true
   }
+
+  for (let i = 0; i < theSnake.length; i++) {
+    if (headOne == theSnake[i][0] && headTwo == theSnake[i][1]) {
+      youLost = true
+      break
+    }
+  }
+  if (youLost) {
+    slither.fillStyle = 'white'
+    slither.font = '50px Impact'
+
+    slither.fillText('Game Over!', map.width / 3.33, map.height / 2)
+  }
+}
