@@ -101,3 +101,14 @@ function goGo() {
   for (let i = 0; i < theSnake.length; i++) {
     slither.fillRect(theSnake[i][0], theSnake[i][1], mineCraft, mineCraft)
   }
+
+  // Having trouble making the game over conditions
+  // if the snake eats itself or if it goes out of bounds
+  if (
+    headOne < 0 ||
+    headOne > leftRight * mineCraft ||
+    headTwo < 0 ||
+    headTwo > upDown * mineCraft
+  ) {
+    youLost = true
+  }
