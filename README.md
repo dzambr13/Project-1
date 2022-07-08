@@ -51,6 +51,12 @@
 
 ### **_Credits_**
 
+##### [SnakeImage] (https://wallpaperaccess.com/full/1919770.jpg)
+
+##### [Markdown] (https://github.com/SEI-R-6-21/u1_hw_markdown)
+
+##### [Trello] (https://trello.com/b/KfrNL1LF/project-1)
+
 ##### [DOM] (https://github.com/SEI-R-6-21/u1_lesson_intro_DOM)
 
 ##### [IfElse] (https://github.com/SEI-R-6-21/u1_lesson_loops_and_control_flow)
